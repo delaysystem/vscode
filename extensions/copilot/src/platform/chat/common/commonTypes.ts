@@ -149,7 +149,7 @@ export type ChatFetchError = WithCopilotServiceRequestId & (
 	| { type: ChatFetchResponseType.AgentUnauthorized; reason: string; reasonDetail?: string; authorizationUrl: string; requestId: string; serverRequestId: string | undefined }
 	/**
 	 * We requested conversation, but we decided to cancel mid-way, for example because the
-	 * user requested cancelation.
+	 * user requested cancellation.
 	 */
 	| { type: ChatFetchResponseType.Canceled; reason: string; reasonDetail?: string; requestId: string; serverRequestId: string | undefined }
 	/**

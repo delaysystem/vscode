@@ -419,7 +419,7 @@ export class ExtHostNotebookKernels implements ExtHostNotebookKernelsShape {
 		}
 
 		// cancel or interrupt depends on the controller. When an interrupt handler is used we
-		// don't trigger the cancelation token of executions.
+		// don't trigger the cancellation token of executions.
 		const document = this._extHostNotebook.getNotebookDocument(URI.revive(uri));
 		if (obj.controller.interruptHandler) {
 			await obj.controller.interruptHandler.call(obj.controller, document.apiNotebook);

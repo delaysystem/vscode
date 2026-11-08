@@ -138,7 +138,7 @@ export class SnippetController2 implements IEditorContribution {
 		}
 
 		// don't listen while inserting the snippet
-		// as that is the inflight state causing cancelation
+		// as that is the inflight state causing cancellation
 		this._snippetListener.clear();
 
 		if (opts.undoStopBefore) {

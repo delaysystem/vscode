@@ -1332,7 +1332,7 @@ export interface IDebugService {
 	 * and resolveds configurations via DebugConfigurationProviders.
 	 *
 	 * Returns true if the start debugging was successful. For compound launches, all configurations have to start successfully for it to return success.
-	 * On errors the startDebugging will throw an error, however some error and cancelations are handled and in that case will simply return false.
+	 * On errors the startDebugging will throw an error, however some error and cancellations are handled and in that case will simply return false.
 	 */
 	startDebugging(launch: ILaunch | undefined, configOrName?: IConfig | string, options?: IDebugSessionOptions, saveBeforeStart?: boolean): Promise<boolean>;
 

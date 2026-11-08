@@ -725,7 +725,7 @@ export abstract class PersistentConnection extends Disposable {
 					continue;
 				}
 				if (isCancellationError(err)) {
-					this._options.logService.info(`${logPrefix} A promise cancelation error occurred while trying to reconnect, will try again...`);
+					this._options.logService.info(`${logPrefix} A promise cancellation error occurred while trying to reconnect, will try again...`);
 					this._options.logService.trace(err);
 					// try again!
 					continue;

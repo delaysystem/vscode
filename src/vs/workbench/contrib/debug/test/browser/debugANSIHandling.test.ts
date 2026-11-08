@@ -201,7 +201,7 @@ suite('Debug - ANSI Handling', () => {
 			});
 		}
 
-		// check all basic colors for underlines (full range is checked elsewhere, here we check cancelation)
+		// check all basic colors for underlines (full range is checked elsewhere, here we check cancellation)
 		for (let i = 0; i <= 255; i++) {
 			const customClassName: string = 'code-underline-colored';
 
